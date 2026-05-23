@@ -1,0 +1,29 @@
+.background-container{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    height:75vh;
+}
+.cars{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    image-rendering: -webkit-optimize-contrast;
+    position:relative;
+}
+.text{
+    position:absolute;
+    top:10%;
+    left:5%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color:antiquewhite;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7);
+}
+.text h2 {
+  margin: 0;
+  font-size: 3rem; 
+  line-height: 1.1;
+}
