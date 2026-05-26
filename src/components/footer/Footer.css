@@ -1,0 +1,103 @@
+/* 1. Main Footer Container */
+.column-holder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Critical for mobile responsiveness */
+    gap: 30px;
+    padding: 60px 40px 40px 40px;
+    background-color: #0b0c10; /* Premium deep onyx background */
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 2. Common Column Styling */
+.column-1, .column-2, .column-3, .column-4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; /* Allows columns to shrink/grow dynamically */
+    min-width: 220px;
+}
+
+/* 3. Typography Styles */
+.column-holder h3 {
+    color: #66fcf1; /* Dynamic electric teal accent for headers */
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Elegant underline effect below headers */
+.column-holder h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #45f3ff;
+    margin-top: 8px;
+}
+
+.column-holder p {
+    color: #c5c6c7; /* Subtle silver-grey for high-readability paragraph text */
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 6px 0;
+}
+
+/* 4. Column 2: Social Media Row Styling */
+.column-2 > div {
+    display: flex;
+    align-items: center; /* Centers icons and labels horizontally */
+    gap: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.column-2 > div:hover {
+    transform: translateX(5px); /* Elegant slide-right on hover */
+}
+
+.column-2 img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; /* Smooth circular icons */
+    object-fit: cover;
+    background-color: #ffffff; /* Fallback frame background */
+}
+
+.column-2 p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* 5. Column 3: Navigation Links */
+.column-3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column-3 ul li {
+    margin-bottom: 12px;
+}
+
+.column-3 ul li a {
+    color: #c5c6c7;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+/* Interactive link hovering */
+.column-3 ul li a:hover {
+    color: #66fcf1;
+    padding-left: 6px;
+}
+
+/* 6. Column 4: Extra Contact Touch-up */
+.column-4 p {
+    font-variant-numeric: tabular-nums; /* Makes telephone numbers look cleaner */
+}

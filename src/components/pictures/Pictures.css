@@ -1,0 +1,23 @@
+.picture-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  justify-content: center; /* Centers the items if they don't fill a whole row */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.picture-holder > img {
+  flex: 1 0 300px;        /* Grow, don't shrink, baseline width of 300px */
+  max-width: 100%;        /* Keeps it responsive on smaller screens */
+  height: 220px;          /* Increased height so the cars are clearly visible */
+  object-fit: cover;      /* Crops nicely without stretching the vehicles */
+  border-radius: 5x;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Gives it a clean showroom look */
+  transition: transform 0.2s ease;
+}
+
+.picture-holder > img:hover {
+  transform: translateY(-5px);
+}

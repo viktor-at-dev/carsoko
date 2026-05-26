@@ -20,9 +20,10 @@
 
 /* Branding */
 .logo {
-  width: 130px;
-  height: auto;
+  width: 65px;
+  height: 65px;
   display: block;
+  border-radius:20px;
 }
 
 /* Inner Navigation Link Row */

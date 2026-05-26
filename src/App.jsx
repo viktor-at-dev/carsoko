@@ -12,6 +12,7 @@ import ImportWithUs from './pages/importwithus/ImportWithUs'
 import CarStock from './pages/Carstock/CarStock'
 import AutoCare from './pages/autocare/AutoCare'
 import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer.jsx'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/AutoCare" element={<AutoCare/>}/>
           <Route path="/CarStock" element={<CarStock/>}/>
         </Routes>
+        <Footer/>
       </Router>
 
     </div>
