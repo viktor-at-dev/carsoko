@@ -1,5 +1,7 @@
 export default function Finance(){
     return(
-        <div></div>
+        <div>
+            <p>Current prices include :....</p>
+        </div>
     )
 }
