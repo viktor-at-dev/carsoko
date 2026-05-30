@@ -1,4 +1,5 @@
 import Background from "../../components/background/Background";
+import Bottom from "../../components/bottom/Bottom";
 import Cards from "../../components/cards/Cards";
 import Pictures from "../../components/pictures/Pictures";
 import Why from "../../components/whyus/why";
@@ -10,6 +11,7 @@ export default function Home(){
             <Cards/>
             <Why/>
             <Pictures/>
+            <Bottom/>
         </div>
     )
 }
